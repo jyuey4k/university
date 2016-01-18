@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.13)  17 JAN 2016 08:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Arch Linux) (preloaded format=pdflatex 2016.1.13)  18 JAN 2016 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1110,7 +1110,7 @@ l.79 \include{Chapter2}
 
 
 
-]
+] [4]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 80.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 80.
  (./Fluid Mechanics.aux (./Chapter1.aux)
@@ -1127,8 +1127,8 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 80.
  ) 
 Here is how much of TeX's memory you used:
- 25860 strings out of 493054
- 486191 string characters out of 6140586
+ 25861 strings out of 493054
+ 486197 string characters out of 6140586
  544888 words of memory out of 5000000
  28986 multiletter control sequences out of 15000+600000
  16396 words of font info for 62 fonts, out of 8000000 for 9000
@@ -1149,10 +1149,10 @@ pe1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.
 pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "Fluid Mechanics.pdf" (6 pages, 181107 bytes).
+Output written on "Fluid Mechanics.pdf" (7 pages, 181649 bytes).
 PDF statistics:
- 169 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 21 named destinations out of 1000 (max. 500000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 146 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 
