@@ -1,0 +1,80 @@
+
+%Packages and other shit. 
+\documentclass[twoside]{book}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{tikz}
+\usepackage[Glenn]{fncychap}
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{fancyhdr} % Headers and footers
+\usepackage{amsthm}
+\definecolor{light-gray}{gray}{0.85}
+\newtheorem{theorem}{Theorem}
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{MATH2965 $\bullet$ Fluid Dynamics $\bullet$ Notes - Semester 1} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+\newcommand{\pdif}[2]{\frac{\partial#1}{\partial#2}}
+\RequirePackage[framemethod=default]{mdframed}
+\newmdenv[skipabove=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+skipbelow=5pt,
+linecolor=black,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt,
+innerbottommargin=5pt,
+backgroundcolor = light-gray]{cBox}
+
+\theoremstyle{definition}
+\newtheorem*{definitionT}{Definition}
+
+\newenvironment{ddef}{\begin{cBox}\begin{definitionT}}{\hfill{\scriptsize}\end{definitionT}\end{cBox}}
+
+\newcommand{\vect}[1]{\vec{\mathbf{#1}}}
+\newcommand{\uvect}[1]{\hat{\mathbf{#1}}}
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Fluid Dynamics}} % Article title
+
+\author{
+\large
+\textsc{Jimmy Tsz Ming Yue}\thanks{440159151}\\[2mm] % Your name
+\normalsize University of Sydney \\ % Your institution
+\normalsize \href{mailto:jyue6728@uni.sydney.edu.au}{jyue6728@uni.sydney.edu.au} % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+\tableofcontents
+\clearpage
+\setcounter{page}{1}
+
+\include{Chapter1}
+\include{Chapter2}
+\end{document}

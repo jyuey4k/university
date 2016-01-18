@@ -1,0 +1,33 @@
+\chapter{Vector Field Theory}
+\section{Curvilinear Coordinates }
+We consider a Newtonian reference frame with a Cartesian coordinate system: $(x,y,z)$. In this frame we are free to introduce other coordinates $(q^1,q^2,q^3)$, which satisfies:
+\begin{equation*}
+	(x^1,x^2,x^3) \equiv (x,y,z)
+\end{equation*}
+The transformation for these coordinates are:
+\begin{align}
+	x = x(q^1, q^2, q^3), \quad y = y(q^1, q^2, q^3), \quad z = z(q^1, q^2, q^3)
+	\intertext{Within inverse transformations:}
+	q_1 = q_1(x,y,z), \quad q_2 = q_2(x,y,z), \quad q_3 = q_3(x,y,z)
+\end{align}
+	As such the associated differentials is
+	\begin{equation}
+		dx  = \sum_{i=1}^{3}\pdif{x}{q_i}dq_i
+	\end{equation}
+
+\subsection{Cylindrical Polar Coordinates}
+	
+	The Cylindrical Polar Coordinates can be easily obtained from the standard Cartesian system via the following transformations:
+	
+	\begin{align*}
+		x = R\cos\phi, \quad y = R\sin\phi, \quad z = z
+		\intertext{where the inverses are given by}
+		R = \sqrt{x^2 + y^2}, \quad \phi = \tan^{-1}\left(\frac{y}{x}\right), \quad z = z	
+	\end{align*}  
+	
+\subsection{$q^i$ curves}
+	The position vector $\vect{r}$ can be expressed in terms of the $q^j$'s through:
+	
+	\begin{equation}
+		\vect{r}(q_1,q_2,q_3) = \uvect{x} x(q_1,q_2,q_3) + \uvect{y} y(q_1,q_2,q_3) + \uvect{z} z(q_1,q_2,q_3)
+	\end{equation}

@@ -1,0 +1,67 @@
+\chapter{Introduction}
+
+\section{Applications of Fluid Dynamics}
+
+Fluid dynamics possess a wide variety of applications within many discipline of sciences such as:
+
+\begin{itemize}
+	\item Engineering
+	\item Astrophysics
+	\begin{itemize}
+	\item[$\star$] Fluid dynamics allows the mapping of planetary cores, gas giants, and ice giants
+	\item[$\star$] Stars and Accretion discs also adhere to the mechanisms mapped by fluid dynamics.
+	\end{itemize}
+	\item Geophysics
+	\begin{itemize}
+		\item[$\star$] Ocean currents
+		\item[$\star$] Atmospheric movements
+		\item[$\star$] Movement of the outer core
+		\item[$\star$] Convection currents within the mantle
+	\end{itemize}
+	\item Biological Systems
+	\begin{itemize}
+		\item[$\star$] Fluid Dynamics provides insight into activity of the blood.
+		\item[$\star$] Also movement within differing fluids, such as swimming and flying.
+	\end{itemize}
+	\item Other Physical Systems 
+	\begin{itemize}
+		\item[$\star$] Electrical conducting fluids
+		\item[$\star$] Magnetic Fields as a Fluid
+		\item[$\star$] Combustion
+		\item[$\star$] Exotic Materials
+	\end{itemize}
+\end{itemize}
+
+\section{Equations in the study of Fluid Dynamics}
+
+The most important equation in the study of Fluid Dynamics is the Navier-Stokes Equation 
+\subsection{Navier-Stokes Equation}
+\begin{cBox} \begin{equation}
+		\rho \frac{D\vect{u}}{Dt} = \rho \vect{F} - \nabla p + \mu \nabla^2\vect{u} + \frac{1}{3}\mu \nabla (\nabla \cdot \vect{u})
+	\end{equation}
+where: \begin{itemize}
+\item	$\rho$ is the mass density
+\item $t$ is time measured in an arbitrary reference measure
+\item $\vect{u}$ is the velocity
+\item $\vect{F}$ is the applied force per unit mass
+\item $p$ is the pressure 
+\item $\mu$ is the dynamic viscosity
+\end{itemize}
+\end{cBox}
+\subsection{Mass Conservation - The continuity equation}
+\begin{ddef}
+
+The continuity equation states that in a steady state process, the rate of mass which enters a system is equal to the rate at which mass leaves the system. In other words the mass flux of a system is equal. Mathematically this can be expressed in differential form as:
+
+\begin{align}
+\frac{D\vect{u}}{Dt} + \rho(\vect{\nabla} \cdot \vect{u}) & = 0
+\intertext{where;}
+\frac{D}{Dt} & = \pdif{}{t} + \vect{u}\cdot\vect{\nabla}
+\end{align}
+called the Convectional Derivative. 
+
+\end{ddef}
+\subsection{How to Solve these equations}
+The study of fluid dynamics revolve around the solution of these two equations. We give the general overview of this. We note first that the two equations hold in Newtonian Inertial frames of reference. Mathematically, we have three unknowns $\vect{u}, \rho, p$ given the two equations and their associated boundary conditions. To date, no closed form solutions have been found, and a Millennium prize is given to the solution of this Navier Stokes Equation. 
+This problem arises in the Convectional Derivative in Eqn (1.2).\par
+Ultimately fluid dynamical problems must be solved numerically through and results in a branch of mathematical physics called computational fluid dynamics. \par In this course, we use the contimum approach to modelling fluid behaviour. Alternatively we could use the Boltzmann equation from statistical mechanics to provide an approximation to the Navier-Stokes equation.
